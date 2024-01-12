@@ -19,3 +19,4 @@ tmp
 /tools/pc/disks/*
 !/tools/pc/disks/README.txt
 !/tools/pc/disks/empty/README.txt
+mylocaldisks
