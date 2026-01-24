@@ -720,6 +720,29 @@
       }
     },
     {
+      "name": "PC.js ibm5160 (BASIC-DOS 2.00A)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/pc/pc.js",
+      "args": [
+        "ibm5160",
+        "--floppy",
+        "--system=bd:2A",
+        "disks/empty"
+      ],
+      "cwd": "${workspaceFolder}/tools/pc",
+      "stopOnEntry": false,
+      "console": "integratedTerminal",
+      "outFiles": [
+        "${workspaceFolder}/none/**/*.js"
+      ],
+      "presentation": {
+        "hidden": false,
+        "group": "machines",
+        "order": 15
+      }
+    },
+    {
       "name": "PC.js ibm5170",
       "type": "node",
       "request": "launch",

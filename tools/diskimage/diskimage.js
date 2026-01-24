@@ -1147,7 +1147,7 @@ function processArgs(argv, fSingle = false)
     input = argv['dir'];
     if (input) {                    // if --dir, the directory should end with a trailing slash (but we'll make sure)
         fDir = (typeof input == "string");
-        if (input && !input.endsWith('/')) input += '/';
+        if (fDir && !input.endsWith('/')) input += '/';
     } else {
         input = argv['files'];
         if (input) {                // if --files, the list of files should be separated with commas (and NO trailing slash)

@@ -3652,7 +3652,7 @@ export default class PC extends PCJSLib {
                 let args = argv.slice(1).join(' ');
                 let sCommand = this.checkCommand(this.localDir, args);
                 if (!sCommand && args) {
-                    error = "command not found: " + args;
+                    error = "unrecognized command or directory: " + args;
                 } else if (!this.localDir) {
                     warning = "unable to add command '" + sCommand + "' to prebuilt disk";
                 } else {
