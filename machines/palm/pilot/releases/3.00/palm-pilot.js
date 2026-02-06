@@ -1,27 +1,27 @@
 (function(){/*
- https://www.pcjs.org/machines/modules/v3/defines.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/message.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v2/format.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/stdlib.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/stdio.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/webio.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/device.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/input.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/led.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/monitor.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/time.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/bus.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/memory.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/ram.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/rom.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/cpu.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/debugger.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/motorola/68k/modules/v3/cpu68k.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/motorola/68k/modules/v3/dbg68k.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/motorola/68k/modules/v3/eamodes.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/palm/pilot/modules/v3/ioregs.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/palm/pilot/modules/v3/video.js (C) 2012-2025 Jeff Parsons
- https://www.pcjs.org/machines/modules/v3/machine.js (C) 2012-2025 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/defines.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/message.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v2/format.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/stdlib.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/stdio.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/webio.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/device.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/input.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/led.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/monitor.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/time.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/bus.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/memory.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/ram.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/rom.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/cpu.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/debugger.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/motorola/68k/modules/v3/cpu68k.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/motorola/68k/modules/v3/dbg68k.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/motorola/68k/modules/v3/eamodes.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/palm/pilot/modules/v3/ioregs.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/palm/pilot/modules/v3/video.js (C) 2012-2026 Jeff Parsons
+ https://www.pcjs.org/machines/modules/v3/machine.js (C) 2012-2026 Jeff Parsons
 */
 var h,aa=typeof Object.create=="function"?Object.create:function(a){function b(){}b.prototype=a;return new b},ba=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
 function ca(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var da=ca(this),ea="Int8 Uint8 Uint8Clamped Int16 Uint16 Int32 Uint32 Float32 Float64".split(" ");da.BigInt64Array&&(ea.push("BigInt64"),ea.push("BigUint64"));
@@ -316,7 +316,7 @@ function Hc(a){var b=a.ba,c=b+a.T,d=0,e=0,g=0,f=a.o,l=0,k=a.M,m=0,n=0,p=a.Z,q=(1
 (l=e);g<k&&(k=g);g>=m&&(m=g+1)}b+=u;d++;if(e>=a.o&&(e=0,g++,g>a.M))break}a.ca=!0;f<a.o&&(b=l-f,m-=k,a.i&&(c=f,d=b,f=k,b=m,k=a.o-(c+d),m=d),a.Ra.putImageData(a.ma,0,0,f,k,b,m),a.H.drawImage(a.v,0,0,a.v.width,a.v.height,0,0,a.X,a.O))}var ch=0,dh=1,bh=2;v.PilotVideo=ah;
 function eh(a,b,c){F.call(this,a,a);var d=this;this.j=!1;this.v=c;this.i="";this.o=this.m=!1;Fb(this,!1);this.Ea=0;b=b.trim();b[0]=="{"?fh(this,b):(this.i=b,cb(this.i,function(e,g,f,l){f==4&&(!l&&g?(fh(d,g),gh(d)):d.N("error (%d) loading configuration: %s\n",l,e))}));window.addEventListener("load",function(){d.o=!0;gh(d)});window.addEventListener(ib("iOS")?"pagehide":ib("Opera")?"unload":"beforeunload",function(){hh(d)});window.addEventListener("pageshow",function(){d.j||d.Fa(!0)})}t(eh,F);
 eh.prototype.Ya=function(a,b){var c=this;switch(a){case ih:b.onclick=function(){c.Fa()};break;case jh:b.onclick=function(){c.Da()}}F.prototype.Ya.call(this,a,b)};
-function gh(a){var b=!0;if(a.m&&a.o){for(var c in a.h){var d=void 0,e=a.h[c];try{d=e["class"],v[d]?d=="Machine"?(a.N("PCjs %s v%3.2f\n%s\n",e.name,3,"Copyright \u00a9 2012-2025 Jeff Parsons <Jeff@pcjs.org>"),a.i&&a.N("Configuration: %s\n",a.i)):new v[d](a.ha,c,e):a.N('unrecognized %s device "%s"\n',d,c)}catch(f){e.optional||(a.N('error initializing %s device "%s": %s\n',d,c,f.message),b=!1),Hb(a,c)}}if(a.l){var g=jb(a);Bb(a,function(f){return f.Bb&&!f.Bb(g)?(f.N('unable to restore state for device "%s"\n',
+function gh(a){var b=!0;if(a.m&&a.o){for(var c in a.h){var d=void 0,e=a.h[c];try{d=e["class"],v[d]?d=="Machine"?(a.N("PCjs %s v%3.2f\n%s\n",e.name,3,"Copyright \u00a9 2012-2026 Jeff Parsons <Jeff@pcjs.org>"),a.i&&a.N("Configuration: %s\n",a.i)):new v[d](a.ha,c,e):a.N('unrecognized %s device "%s"\n',d,c)}catch(f){e.optional||(a.N('error initializing %s device "%s": %s\n',d,c,f.message),b=!1),Hb(a,c)}}if(a.l){var g=jb(a);Bb(a,function(f){return f.Bb&&!f.Bb(g)?(f.N('unable to restore state for device "%s"\n',
 f.ga),!1):!0})}Fb(a,!0);Gb(a,a.Fa.bind(a,b))||a.N("machine %s not ready to power, waiting for device(s)\n",a.ha)}}
 function fh(a,b){try{a.h=JSON.parse(b);var c=a.h[a.ha];if(!c){c=a.h[Oa(a.i)];if(!c)throw Error("configuration missing machine ID");a.h[a.ha]=c}Ab(a,c,["autoSave","autoStart"]);a.l=a.config.autoSave!==!1;a.H=a.config.autoStart!==!1;if(a.v){var d=eval("("+a.v+")"),e;for(e in d)a.config[e]=d[e]}a.m=!0}catch(g){c=g.message,(d=c.match(/position ([0-9]+)/))&&(c+=" ('"+b.substr(+d[1],40).replace(/\s+/g," ")+"...')"),a.N("machine '%s' initialization error: %s\n",a.ha,c)}}
 eh.prototype.Fa=function(a){a=a===void 0?!this.j:a;if(Eb(this)){var b=this;a&&this.N("power on\n");Bb(this,function(c){c.Fa&&c!=b&&(c.config["class"]!="CPU"||b.H&&Eb(b)?c.Fa(a):c.time.update(!0));return!0});(this.j=a)||this.N("power off\n")}};eh.prototype.Da=function(){if(Eb(this)){var a=this;Bb(this,function(b){b.Da&&b!=a&&b.Da();return!0});this.N("reset\n")}};function hh(a){if(a.l){var b=[];Bb(a,function(c){c.bb&&c.bb(b);return!0});rb(a,b)}a.Fa(!1)}var ih="power",jh="reset";

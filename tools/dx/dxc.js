@@ -1,7 +1,7 @@
 /**
  * @fileoverview DX Container Class
  * @author Jeff Parsons <Jeff@pcjs.org>
- * @copyright © 2012-2025 Jeff Parsons
+ * @copyright © 2012-2026 Jeff Parsons
  * @license MIT <https://www.pcjs.org/LICENSE.txt>
  *
  * This file is part of PCjs, a computer emulation software project at <https://www.pcjs.org>.
@@ -27,7 +27,7 @@ export default class DXC {
      * Public class fields
      */
     static VERSION = "1.0";
-    static COPYRIGHT = "Copyright © 2012-2025 Jeff Parsons <Jeff@pcjs.org>";
+    static COPYRIGHT = "Copyright © 2012-2026 Jeff Parsons <Jeff@pcjs.org>";
     static EXCEPTIONS = {               // use bits 16-31 (bits 0-15 are reserved for other classes)
         UNIQUE:         0x10000
     };

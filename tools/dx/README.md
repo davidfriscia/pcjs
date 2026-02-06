@@ -42,7 +42,7 @@ The format of a `dx.js` command (as `--help` will also tell you) is:
 Here is the complete help text:
 
     dx.js 1.0
-    Copyright © 2012-2025 Jeff Parsons <Jeff@pcjs.org>
+    Copyright © 2012-2026 Jeff Parsons <Jeff@pcjs.org>
 
     Arguments: dx.js -h
 
