@@ -3328,7 +3328,7 @@ export default class DiskInfo {
      * @param {string} [listing]
      * @returns {string}
      */
-    getFileListing(iVolume = -1, indent = 0, listing)
+    getFileListing(iVolume = -1, indent = 0, listing = "dir")
     {
         let sListing = "";
         if (this.buildTables() > 0) {
