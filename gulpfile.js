@@ -64,12 +64,12 @@ import gulpMergeJSON from "gulp-merge-json";
 import gulpForEach from "gulp-foreach";
 import gulpHeader from "gulp-header";
 import gulpReplace from "gulp-replace";
-import closureCompiler from "google-closure-compiler";
+import {gulp as closureCompiler} from "google-closure-compiler";
 import gulpSourceMaps from "gulp-sourcemaps";
 import pcjslib from "./tools/modules/pcjslib.js";
 
 let argv = pcjslib.getArgs()[1];
-let gulpClosureCompiler = closureCompiler.gulp();
+let gulpClosureCompiler = closureCompiler;
 let pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"));
 let eol = process.platform === "win32"? "\r\n" : "\n";
 

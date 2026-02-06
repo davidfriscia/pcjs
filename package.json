@@ -33,9 +33,10 @@
   "dependencies": {
     "eslint": "^8.57.1",
     "glob": "^7.2.3",
-    "google-closure-compiler": "^20240317.0.0",
+    "google-closure-compiler": "^20260128.0.0",
     "gulp": "^4.0.2",
     "gulp-chmod": "^3.1.0",
+    "gulp-cli": "^3.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-foreach": "^0.1.0",
     "gulp-header": "^2.0.9",
