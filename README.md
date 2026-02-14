@@ -1,5 +1,13 @@
 # PCjs Machines
 
+This fork was created with the aim of hosting my personal collection of virtual machines with historical software pre-installed.
+
+On [pcjs.dfri.info](https://pcjs.dfri.info), I deployed the entire extraordinary work done by Jeff Parson and added some personal software installations that I find interesting.
+
+WARNING: this fork may contain an outdated version of pcjs. Please always refer to the original repository.
+
+Here follow the original readme.
+
 [PCjs](https://www.pcjs.org) is the home of [PCx86](/machines/pcx86/), the original IBM PC emulator that runs in your browser.
 
 PCjs is also my homage to a small number of machines that I grew up with.  Those machines include:
